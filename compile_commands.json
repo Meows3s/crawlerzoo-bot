@@ -1,1 +1,14 @@
-build/compile_commands.json
+[
+{
+  "directory": "/home/mo/code/crawlerzoo-bot",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NETWORK_LIB -I/home/mo/code/crawlerzoo-bot/crawlerzoo-bot_autogen/include -I/home/mo/code/crawlerzoo-bot/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -g -std=c++17 -Wall -Wextra -fPIC -o CMakeFiles/crawlerzoo-bot.dir/crawlerzoo-bot_autogen/mocs_compilation.cpp.o -c /home/mo/code/crawlerzoo-bot/crawlerzoo-bot_autogen/mocs_compilation.cpp",
+  "file": "/home/mo/code/crawlerzoo-bot/crawlerzoo-bot_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/crawlerzoo-bot.dir/crawlerzoo-bot_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/mo/code/crawlerzoo-bot",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_NETWORK_LIB -I/home/mo/code/crawlerzoo-bot/crawlerzoo-bot_autogen/include -I/home/mo/code/crawlerzoo-bot/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -g -std=c++17 -Wall -Wextra -fPIC -o CMakeFiles/crawlerzoo-bot.dir/src/main.cpp.o -c /home/mo/code/crawlerzoo-bot/src/main.cpp",
+  "file": "/home/mo/code/crawlerzoo-bot/src/main.cpp",
+  "output": "CMakeFiles/crawlerzoo-bot.dir/src/main.cpp.o"
+}
+]
