@@ -10,8 +10,11 @@ CTestTestfile.cmake
 install_manifest.txt
 .ninja_deps
 .ninja_log
-compile_commands.json
 CMakeUserPresets.json
+
+# NB: compile_commands.json is deliberately NOT ignored — the one at the repo
+# root is a tracked symlink to build/compile_commands.json so clangd finds it
+# (see .clangd). Real generated DBs live inside build/, which is ignored above.
 
 # Leftovers from an accidental in-source configure; use `cmake -S . -B build`.
 /Makefile

@@ -1,0 +1,21 @@
+# clangd configuration — https://clangd.llvm.org/config
+#
+# clangd has no config key for locating the compilation database. It finds
+# compile_commands.json by walking up from the source file and checking each
+# ancestor directory plus its `build/` subdirectory. Two things satisfy that
+# here, both needed:
+#
+#   1. `set(CMAKE_EXPORT_COMPILE_COMMANDS ON)` in CMakeLists.txt, so the DB is
+#      written at all (the Unix Makefiles generator doesn't do it by default).
+#   2. The `compile_commands.json` symlink at the repo root -> build/, so a
+#      source file in src/ finds the DB one level up.
+#
+# A differently-named build dir (cmake-build-debug, out/, ...) will NOT be
+# found, and every Qt include then reports "'QCoreApplication' file not found".
+CompileFlags:
+  # Flags from the compilation database are authoritative; just stop one bad
+  # flag from truncating the diagnostic list.
+  Add: [-ferror-limit=0]
+
+Diagnostics:
+  UnusedIncludes: Strict
