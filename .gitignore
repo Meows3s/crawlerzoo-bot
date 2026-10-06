@@ -1,0 +1,83 @@
+# ------------------------------------------------------------------ build ---
+build/
+build-*/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+.ninja_deps
+.ninja_log
+compile_commands.json
+CMakeUserPresets.json
+
+# Leftovers from an accidental in-source configure; use `cmake -S . -B build`.
+/Makefile
+/.qt/
+
+# ------------------------------------------------------- Qt generated -------
+*_autogen/
+autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.moc
+.qtc_clangd/
+*.qmlc
+*.jsc
+
+# ------------------------------------------------------- compiled output ----
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.d
+*.gcda
+*.gcno
+*.gcov
+core
+core.*
+vgcore.*
+/crawlerzoo-bot
+
+# ------------------------------------------------------------ packaging -----
+*.deb
+*.rpm
+*.AppImage
+*.tar.gz
+*.zip
+*.snap
+installer/
+
+# ------------------------------------------------------------------ IDE -----
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.clangd/
+.cache/
+.DS_Store
+Thumbs.db
+
+# -------------------------------------------------------------- secrets -----
+.env
+.env.*
+*.pem
+*.key
+secrets/
+credentials.json
+auth.json
